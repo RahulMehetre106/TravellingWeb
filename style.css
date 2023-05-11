@@ -1,0 +1,282 @@
+/* logo */
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,900&family=Sigmar&display=swap');
+
+  /* navlink */
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,900&family=Sigmar&family=Ubuntu&display=swap');
+
+
+body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+   
+}
+
+/* navbar */
+.logo{
+    display: inline;
+    float: left;
+    font-family: 'Roboto', sans-serif;
+font-family: 'Sigmar', cursive;
+}
+.logo img{
+    width: 35px;
+    height: 35px;
+
+}
+.navbar{
+    background-color: white;
+    height: 60px;
+    /* border: solid 3px; */
+    position: relative;
+    top: 0px;
+    margin-left: 0%;
+    width: 100%;
+    height: 6vh;
+    border-bottom: solid 2px;
+}
+.navbar ul li{
+    list-style: none;
+    display: inline;
+}
+.navbar ul li a{
+    text-decoration: none;
+    float: right;
+    line-height: 15px;
+    margin-right: 45px;
+    /* margin-top: 10px; */
+    font-family: 'Roboto', sans-serif;
+font-family: 'Sigmar', cursive;
+font-family: 'Ubuntu', sans-serif;
+color: black;
+font-weight: bold;
+font-size: 16px;
+}
+.navbar ul li a:hover{
+    color: red;
+}
+.Register-btn{
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Sigmar', cursive;
+    font-family: 'Ubuntu', sans-serif;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    width: 100px;
+    height: 30px;
+    margin-top: -7px;
+   background-color: black;
+
+}
+.Register-btn:hover{
+    color: red;
+    background-color: thistle;
+}
+
+/* navbar end  */
+.con1{
+    display: flex;
+    width: 100%;
+    height: 85vh;
+}
+.container{
+    position: absolute;
+    /* background-color: red; */
+    height: 80vh;
+    width: 100%;
+    /* margin-top: 65px; */
+    
+}
+.container img{
+    
+    height: 80vh;
+    width: 100%;
+    /* opacity: 80%; */
+    /* display: none; */
+}
+
+.con{
+    /* width: 100%; */
+    top: 300px;
+    left: 250px;
+   position: relative;
+ 
+}
+.con-text{
+    color:rgb(255, 255, 255);
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Sigmar', cursive;
+    font-family: 'Ubuntu', sans-serif;
+}
+.booking{
+    color:white;
+    position: relative;
+    top: 100px;
+    left: 300px;
+    height: 400px;
+    width: 300px;
+    background-color:rgba(56, 35, 33, 0.668);
+    font-size: 18px;
+    box-shadow: 10px 10px 10px black;
+}
+.booking table {
+    border-collapse: separate;
+        border-spacing: 0 15px;
+}
+.input-table{
+    border-bottom: 2px solid white;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    background-color: transparent;
+    /* background-color:rgba(56, 35, 33, 0.33); */
+    
+}
+.date-class{
+    height: 35px;
+    width: 120px;
+}
+
+/* card  */
+.main{
+    /* margin-top: 50vh; */
+    background-color:white;
+    
+    /* background-image: url(images/download.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: lighten; */
+    /* opacity: 80%; */
+}
+.card{
+    width: 80%;
+    height: 60vh;
+    /* background-color: antiquewhite; */
+    /* margin-top: 60vh; */
+   margin: auto;
+    /* margin-bottom: 50px; */
+    display: flex;
+    flex-direction: row;
+}
+
+.card-header img{
+    width: 50vh;
+    height: 45vh;
+    margin-left: 60px;
+    margin-top: 40px;
+    box-shadow: 10px 10px 10px rgb(95, 90, 90);
+    /* border-radius: 50%; */
+    /* clip-path: polygon(50% 0%, 99% 3%, 90% 32%, 97% 63%, 93% 98%, 32% 100%, 0 100%, 0% 43%, 0 0); */
+}
+.card-body{
+    width: 60vh;
+    height: 45vh;
+    margin-left: 20vh;
+    /* margin-top:10vh; */
+}
+
+/* .. */
+.flex-ex{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 10px;
+}
+.temp{
+    /* position: absolute; */
+}
+.temp-absolute{
+    position: relative;
+    margin-top: -8vh;
+    margin-left: 32%;
+    color: aliceblue;
+}
+.temp:hover{
+    opacity: 50%;
+}
+.team{
+    display: flex;
+    flex-direction: row;
+    column-gap: 20px;
+    /* margin-bottom: 10vh; */
+    /* margin-left: 20px; */
+    justify-content: center;
+}
+.team-card{
+    height: 50vh;
+    width: 35vh;
+    background-color: rgba(0, 0, 0, 0.277);
+    /* margin-left: 30px; */
+}
+.btn1{
+    background-color: rgba(0, 0, 0, 0.519);
+    color:white;
+    height: 45px;
+    width: 95px;
+    margin-top: 5px;
+    
+    margin-bottom: 10vh;
+}
+#btn2{
+    display: none;
+}
+.btn1:hover{
+    background-color: red;
+    color: black;
+}
+.team12{
+    display: flex;
+    flex-direction: row;
+    column-gap: 20px;
+    /* margin-bottom: 10vh; */
+    /* margin-left: 20px; */
+    justify-content: center;
+    /* display: inline-flex; */
+    display: none;
+}
+.footer1{
+    width: 100%;
+    height: 40vh;
+    background-color:rgba(56, 35, 33, 0.668);   
+    /* background-color: rgba(35, 30, 30, 0.705); */
+}
+.footer1 p{
+    display: inline-block;
+    margin-left: 115px;
+    font-size: 20px;
+    color: aliceblue;
+}
+.form1{
+    position: sticky;
+    top: 70px;
+    margin-left: 450px;
+    margin-top: -400px;
+    width: 40%;
+    height: 59vh;
+    /* background-color: #9d7fa1; */
+    background-color: rgb(151, 133, 130);
+    box-shadow: 20px 20px 100vh red;
+    display: none;
+
+}
+.btn3{
+    background-color: red;
+    width: 100px;
+    height: 50px;
+    margin: auto;
+}
+.abc12 label{
+    font-size: 20px;
+    font-weight: bold;
+}
+.abc12 input{
+    border-bottom: 2px solid black;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    /* color: black; */
+    /* background-color: ; */
+    background-color: transparent;
+    width: 200px;
+    
+}

@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ...css file...... -->
+    <link rel="stylesheet" href="style.css">
+    <!-- JQUERY CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    <title>Suffar</title>
+</head>
+<body>
+        <!-- navbar -->
+        
+        <div class="navbar" id="navbar">
+                <ul>
+                    <!-- logo -->
+                    <li class="logo">
+                        <img src="images/logo.jpg">SUFFER
+                    </li>
+                    <!-- nav link -->
+                    <li >
+                        <a href="#"><button class="Register-btn" onclick="getRegister()">Register</button></a>
+                    </li>
+                     
+                    <li>
+                        <a href="#" onclick="getLogin()">Login</a>
+                    </li>
+                    <li>
+                        <a href="#about_us">About Us</a>
+                    </li>
+                    <li>
+                        <a href="#Community">Community</a>
+                    </li>
+                    <li>
+                        <a href="#">Services</a>
+                    </li>
+                    <li>
+                        <a href="descover/descover.html">Discover</a>
+                    </li>
+                    <li>
+                        <a href="#" onclick="getHelp()">Help</a>
+                    </li>
+                </ul>
+                
+        </div>
+        <!-- CONTAINER  -->
+<div class="con1">
+    <div class="container" id="cont">
+                <div class="con-images">
+                    <!-- <img class="slider1"src="images/container image 1.jpg"> -->
+                    <img class="slider1"src="images/container image 2.jpg">
+                    <img class="slider1" src="images/container image 3.jpg">
+                </div>
+    </div>
+                    <div class="con">
+                        <div class="con-text">
+                            <h1 > Welcome Lets Go to Your Favorite place with SUFFER</h1>
+                            <h5>________Suffar Suhana_______</h5>
+                            <h1>Be Prepared For the <br> Mountains And Beyound</h1>
+                            <h6>___design by <i>Rahul Mehetre___</i></h6>
+                        </div>
+                    </div>
+                    
+
+                    <!-- BOOKING FORM  -->
+                    <div class="booking" style="text-align: center;">
+                        <h1 align="center">Book Your Seat Now</h1>
+                       
+                        <table style="row-gap: 40px;" align="center" >
+                            <tr>
+                                <td>Name  :</td>
+                                <td><input type="text" class="input-table" ></td>
+                            </tr>
+                            <tr>
+                                <td>Contact No.:</td>
+                                <td><input type="text" class="input-table"></td>
+                            </tr>
+                            <tr>
+                                <td>Email :</td>
+                                <td><input type="email" class="input-table"></td>
+                            </tr>
+                            <tr>
+                                <td><label>Location :</label></td>
+                                <td> <input type="text" name="loc" class="input-table" ></td>
+                            </tr>
+                            <tr>
+                                <td><label>Date :</label></td>
+                                <td> <input type="date" name="date" class="date-class"></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2"><button  style="height: 35px;background-color: tomato;">Check Avalability</button>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+ </div>
+   
+            <!-- CREATE ACCOUNT FORM  -->
+    <div class="form1" id="form1">
+        
+            <fieldset>
+                <legend align="center"><b>Create Account</b></legend>
+                <form align="center" class="abc12">
+                    <br>
+                    <br>
+                    <label>Create User Name :</label>
+                    <input type="text" name="username" placeholder="Create Your User Name">
+                    <br><br>
+                    <br>
+                    <label style="margin-left: 25px;">Email :</label>
+                    <input type="Email" name="email" placeholder="Enter valid Email" style="margin-left: 55px;">
+                    <br>
+                    <br><br>
+                    <label style="margin-left: 15px;">Contact No. :</label>
+                    <input type="text" name="contact_no" placeholder="Enter Contact number" style="margin-left: 30px;">
+                    <br><br>
+                    <br>
+                    <label style="margin-left: 15px;">Password :</label>
+                    <input type="password" name="password" placeholder="create password" style="margin-left: 45px;">
+                    <br>
+                    <br><br>
+                    <label>Re-Enter Password :</label>
+                    <input type="password" name="password" placeholder="create password">
+                    <br>
+                    <br><br>
+
+                 <center>
+                    
+                    <button class="btn3" onclick="getCreate()">Create account</button>&nbsp;
+                    <button class="btn4 btn3" onclick="getCancel()">Cancel Process</button>
+              
+                 </center>
+                </form>
+            </fieldset>
+       
+    </div>
+
+<!-- login  -->
+<div class="form1" id="form2">
+        
+    <fieldset>
+        <legend align="center"><b>Login Account</b></legend>
+        <form align="center" class="abc12">
+            <br>
+            <br>    
+           <h1 align="center" style="color: aliceblue;">Login Existing Account</h1>
+            <br>
+            <label style="color: aliceblue;"> UserName/Email :</label>
+            <input type="text" name="username" placeholder="Create Your User Name">
+            <br><br>
+            <br> <br>
+
+            <label style="margin-left: 15px; color: aliceblue;">Password :</label>
+            <input type="password" name="password" placeholder="create password" style="margin-left: 45px;">
+            <br>
+            <br><br> <br>
+
+         <center>
+            
+            <button style="color: aliceblue;" class="btn3" onclick="getLoginAcc()"><b>Login</b></button>&nbsp;
+            <button style="color: aliceblue;" class="btn4 btn3" onclick="getCancelLogin()"><b>Cancel</b></button>
+      
+         </center>
+        </form>
+    </fieldset>
+
+ </div>
+
+
+<!-- login end  -->
+           
+
+                <!-- card section 1 -->
+    <div class="main" id="about_us">
+        <div class="card" >
+            <div class="card-header">
+                <img src="images/container image 2.jpg">
+            </div>
+          
+            <div class="card-body" >
+                    <h1><u>About Us</u> </h1>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero dolores assumenda veritatis expedita esse, voluptates mollitia quaerat molestias quis molestiae? Consequatur aspernatur quae commodi earum voluptas saepe odit culpa aliquam?
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis dignissimos deleniti atque asperiores modi, debitis culpa dolor ipsa necessitatibus fugit pariatur delectus aliquid aut quaerat ratione possimus. Accusantium, beatae dolorum?
+                    </p>               
+            </div>
+            
+        </div>
+
+        <!-- <hr> -->
+
+        <div class="card">
+            <div class="card-body">
+                <h1><u>Welcome Note</u></h1>
+               <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero dolores assumenda veritatis expedita esse, voluptates mollitia quaerat molestias quis molestiae? Consequatur aspernatur quae commodi earum voluptas saepe odit culpa aliquam?
+               </p>
+               <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis dignissimos deleniti atque asperiores modi, debitis culpa dolor ipsa necessitatibus fugit pariatur delectus aliquid aut quaerat ratione possimus. Accusantium, beatae dolorum?
+               </p>
+                          
+           </div>
+            <div class="card-header">
+                <img src="images/container image 2.jpg">
+            </div>
+          
+        
+           
+        </div>
+
+        <!-- <hr> -->
+
+        <div class="card">
+            <div class="card-header">
+                <img src="images/container image 2.jpg">
+            </div>
+          
+           <div class="card-body">
+            <h1><u>Understand Your <br> Map & Timing</u></h1>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                     Nam porro voluptates culpa doloremque laborum perferendis ullam ipsum,
+                      quibusdam praesentium esse repellendus maxime voluptas, adipisci quis
+                       sunt cum corporis? Velit, ullam!</p>
+                       <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                        Nam porro voluptates culpa doloremque laborum perferendis ullam ipsum,
+                         quibusdam praesentium esse repellendus maxime voluptas, adipisci quis
+                          sunt cum corporis? Velit, ullam!</p>
+                          
+           </div>
+           
+        </div>
+
+        <!-- <hr> -->
+    </div>
+
+
+    <!-- card end  -->
+    <div >
+    
+      
+      <h1 style="text-align: center;">Our Company travelling Areas</h1>
+      <h6 style="text-align: center;">____how about go to____</h6> 
+      
+      <!-- travelling areas cards -->
+    <div class="flex-ex">
+        <div class="temp">
+
+            <img class="slide2" src="images/hill station.jpg" style="overflow: hidden;"width="350px" height="450px">
+          <div class="temp-absolute">
+            <h1>Hill Stations</h1>
+          </div>
+        </div>
+
+        <div class="temp">
+
+            <img class="slide2" src="images/road.jpg" style="overflow: hidden;"width="350px" height="450px">
+            <div class="temp-absolute">
+                <h1>Road Trip</h1>
+              </div>
+        </div>
+        <div class="temp">
+
+            <img class="slide2" src="images/12.jpg" style="overflow: hidden;"width="350px" height="450px">
+            <div class="temp-absolute">
+                <h1>Temples</h1>
+              </div>
+        </div>
+        
+
+    </div>
+</div>
+
+            <!-- working team list 1 -->
+                            <h1 align="center" id="Community">Our Teams</h1>
+                            <h6 align="center">__Information about the workers__</h6>
+            
+        <div class="team" id="team">
+           
+                <div class="team-card">
+                    <div>
+                        <center>
+                            <img src="images/logo.jpg" width="200px" height="200px" style="border-radius: 50%;">
+                       
+                        <h1>Rahul Mehetre</h1>
+                        <h3>Owner of Company</h3><p><br>Software Developer</p> 
+                    </center>
+                    </div>
+                </div>
+
+                <div class="team-card">
+                    <div>
+                        <center>
+                            <img src="images/logo.jpg" width="200px" height="200px" style="border-radius: 50%;">
+                       
+                        <h1>Rahul Mehetre</h1>
+                        <h3>Owner of Company</h3><p><br>Software Developer</p> 
+                    </center>
+                    </div>
+                </div>
+
+                <div class="team-card">
+                    <div>
+                   <center>
+                            <img src="images/logo.jpg" width="200px" height="200px" style="border-radius: 50%;">
+                       
+                        <h1>Rahul Mehetre</h1>
+                        <h3>Owner of Company</h3><p><br>Software Developer</p> 
+                    </center>
+                    </div>
+                </div>
+
+                <div class="team-card">
+                    <div>
+                        <center>
+                            <img src="images/logo.jpg" width="200px" height="200px" style="border-radius: 50%;">
+                       
+                        <h1>Rahul Mehetre</h1>
+                        <h3>Owner of Company</h3><p><br>Software Developer</p> 
+                    </center>
+                    </div>
+                </div>
+
+                <div class="team-card">
+                    <div>
+                        <center>
+                            <img src="images/logo.jpg" width="200px" height="200px" style="border-radius: 50%;">
+                       
+                        <h1>Rahul Mehetre</h1>
+                        <h3>Owner of Company</h3><p><br>Software Developer</p> 
+                    </center>
+                    </div>
+                </div> 
+        </div>
+            
+
+                        <!-- working team list 2 -->
+
+        <div class="team12" id="team12">
+           
+            <div class="team-card">
+                <div>
+                    <center>
+                        <img src="images/container image 1.jpg" width="200px" height="200px" style="border-radius: 50%;">
+                   
+                    <h1>Rahul Mehetre</h1>
+                    <h3>Owner of Company</h3><p><br>Software Developer</p> 
+                </center>
+                </div>
+            </div>
+
+            <div class="team-card">
+                <div>
+                    <center>
+                        <img src="images/container image 1.jpg" width="200px" height="200px" style="border-radius: 50%;">
+                   
+                    <h1>Rahul Mehetre</h1>
+                    <h3>Owner of Company</h3><p><br>Software Developer</p> 
+                </center>
+                </div>
+            </div>
+
+            <div class="team-card">
+                <div>
+               <center>
+                        <img src="images/container image 1.jpg" width="200px" height="200px" style="border-radius: 50%;">
+                   
+                    <h1>Rahul Mehetre</h1>
+                    <h3>Owner of Company</h3><p><br>Software Developer</p> 
+                </center>
+                </div>
+            </div>
+
+            <div class="team-card">
+                <div>
+                    <center>
+                        <img src="images/container image 1.jpg" width="200px" height="200px" style="border-radius: 50%;">
+                   
+                    <h1>Rahul Mehetre</h1>
+                    <h3>Owner of Company</h3><p><br>Software Developer</p> 
+                </center>
+                </div>
+            </div>
+
+            <div class="team-card">
+                <div>
+                    <center>
+                        <img src="images/container image 1.jpg" width="200px" height="200px" style="border-radius: 50%;">
+                   
+                    <h1>Rahul Mehetre</h1>
+                    <h3>Owner of Company</h3><p><br>Software Developer</p> 
+                </center>
+                </div>
+            </div> 
+    </div>
+        
+            <center> 
+                <button class="btn1" id="btn11" onclick="getForward()">Show More</button>
+                <button class="btn1" id="btn2" onclick="getReverse()">BACK</button>
+            </center>
+
+
+            <!-- footer  -->
+            <div class="footer1">
+                <h1 align="center">Contact us</h1>
+                <p><b>Phone</b> <span></span>: <br><i>8637719037</i></p>
+                <p><b>Email</b> <span></span>: <br><i>rahulmehetre2002@gmail.com</i></p>
+                <p><b>Whatsapp</b> <span></span>: <br><i>8637719037</i></p>
+                <p><b>Instagram</b> <span></span>: <br><i>rahulmeheter_28</i></p>
+                <p><b>Facebook</b> <span></span>: <br><i>Rahul Mehetre</i></p>
+               
+                <h5 align="center">_____<i>No copywrite_____</i></h5>
+            </div>
+
+        
+
+
+        <script>
+            var myIndex = 0;
+            carousel();
+            
+            function carousel() {
+              var i;
+              var x = document.getElementsByClassName("slider1");
+              for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";  
+              }
+              myIndex++;
+              if (myIndex > x.length) {myIndex = 1}    
+              x[myIndex-1].style.display = "block";  
+              setTimeout(carousel, 2000); // Change image every 2 seconds
+            }
+
+            function getForward(){
+
+                document.getElementById("team").style.display="none";
+                document.getElementById("team12").style.display="flex";
+                document.getElementById("btn11").style.display="none";
+                document.getElementById("btn2").style.display="block";
+            }
+            function getReverse(){
+                document.getElementById("team12").style.display="none";
+                document.getElementById("team").style.display="flex";
+                document.getElementById("btn11").style.display="block";
+                document.getElementById("btn2").style.display="none";
+            }
+
+            function getHelp(){
+                prompt();
+               
+            }
+            function getRegister(){
+                document.getElementById("form1").style.display="block";
+                document.getElementById("navbar").style.display="none";
+            }
+            function getLogin(){
+                document.getElementById("form2").style.display="block";
+                document.getElementById("navbar").style.display="none";
+            }
+            function getCreate(){
+                 document.getElementById("form1").style.display="none";
+                 document.getElementById("navbar").style.display="block";
+                //  alert("Account Created ");
+                }
+            function getCancel(){
+                    document.getElementById("form1").style.display="none";
+                    document.getElementById("navbar").style.display="block";
+                    // alert("Cancel done");
+            }
+            function getLoginAcc(){
+                document.getElementById("form2").style.display="none";
+                document.getElementById("navbar").style.display="block";
+                    // alert("Login done done");
+            }
+            function getCancelLogin(){
+                document.getElementById("form2").style.display="none";
+                document.getElementById("navbar").style.display="block";
+                    // alert("Login done done");
+            }
+        </script>
+
+        
+</body>
+</html>
